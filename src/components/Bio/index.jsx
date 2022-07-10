@@ -23,8 +23,8 @@ const BioWrapper = styled.div`
 `
 
 const profileImageRoot =
-  typeof window !== "undefined" && window.location.host === "localhost:8000"
-    ? "http://localhost:8000"
+  typeof window !== "undefined" && window.location.host === "gatsby-notion-blog-yfwnn.run.goorm.io"
+    ? "gatsby-notion-blog-yfwnn.run.goorm.io"
     : siteUrl
 
 const Profile = styled.div`

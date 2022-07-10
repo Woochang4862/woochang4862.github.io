@@ -7,7 +7,7 @@ module.exports = {
     github: "https://github.com/Woochang4862",
     linkedIn: "https://linkedin.com",
     facebook: "https://www.facebook.com",
-    instagram: "https://www.instagram.com",
+    instagram: "https://www.instagram.com/j.woochang",
     email: "woochang4862@gmail.com",
   },
   utterances: {
