@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://woochang4862.github.io/sitemap/sitemap-index.xml
+Host: https://woochang4862.github.io
