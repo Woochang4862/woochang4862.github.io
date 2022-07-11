@@ -6,7 +6,7 @@ module.exports = {
   links: {
     github: "https://github.com/Woochang4862",
     linkedIn: "https://linkedin.com",
-    facebook: "https://www.facebook.com",
+    facebook: "https://www.facebook.com/profile.php?id=100006238759080",
     instagram: "https://www.instagram.com/j.woochang",
     email: "woochang4862@gmail.com",
   },
