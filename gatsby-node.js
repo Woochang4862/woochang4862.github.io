@@ -62,6 +62,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: {
           id: post.id,
           series: post.frontmatter.series,
+          parent: post.frontmatter.parent,
           previousPostId,
           nextPostId,
         },
@@ -109,6 +110,7 @@ exports.createSchemaCustomization = ({ actions }) => {
     description: String
     tags: [String!]!
     series: String
+    parent: String
   }
   `
   createTypes(typeDefs)

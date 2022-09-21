@@ -8,6 +8,7 @@ tags:
   - DL
   - Sequencial Data
 series: "AI|ML|DL"
+parent: Encoder/Decoder Model
 ---
 
 ## Seq2Seq

@@ -36,7 +36,12 @@ const Date = styled.span`
   color: ${props => props.theme.colors.secondaryText};
 `
 
-const Header = ({ title, date, tags, minToRead }) => {
+const Parent = styled.span`
+  font-weight: 300;
+  color: ${props => props.theme.colors.secondaryText};
+`
+
+const Header = ({ title, date, tags, minToRead, parent }) => {
   return (
     <Wrapper>
       <ArticleTitle> {title} </ArticleTitle>
@@ -45,6 +50,7 @@ const Header = ({ title, date, tags, minToRead }) => {
         <Date>· {date} </Date>
         <Date>· {minToRead} min read </Date>
       </Information>
+      <Parent>{parent}</Parent>
       {tags && <TagList tagList={tags} />}
       <Divider mt="0" />
     </Wrapper>
