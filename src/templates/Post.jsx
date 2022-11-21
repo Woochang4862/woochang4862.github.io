@@ -41,7 +41,6 @@ const Post = ({ data }) => {
           date={date}
           update={update}
           tags={tags}
-          parent={parent}
           minToRead={Math.round(readingTime.minutes)}
         />
         {filteredSeries.length > 0 && (
@@ -78,7 +77,6 @@ export const pageQuery = graphql`
         update(formatString: "MMMM DD, YYYY")
         tags
         series
-        parent
       }
       fields {
         slug

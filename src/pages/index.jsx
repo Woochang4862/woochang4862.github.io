@@ -13,6 +13,7 @@ import VerticalSpace from "components/VerticalSpace"
 import { title, description, siteUrl } from "../../blog-config"
 
 const BlogIndex = ({ data }) => {
+  console.log(data)
   const posts = data.allMarkdownRemark.nodes
   const tags = _.sortBy(data.allMarkdownRemark.group, ["totalCount"]).reverse()
 

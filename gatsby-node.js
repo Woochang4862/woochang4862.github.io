@@ -89,12 +89,13 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode })
-    const newSlug = `/${slug.split("/").reverse()[1]}/`
+    console.log(slug)
+    const newSlug = `/${slug}/`
 
     createNodeField({
       node,
       name: `slug`,
-      value: newSlug,
+      value: slug,
     })
   }
 }
@@ -110,7 +111,6 @@ exports.createSchemaCustomization = ({ actions }) => {
     description: String
     tags: [String!]!
     series: String
-    parent: String
   }
   `
   createTypes(typeDefs)
