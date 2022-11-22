@@ -4,9 +4,9 @@ description: "Let's learn about Sequence-to-Sequence Model."
 date: 2022-07-10
 update: 2022-07-10
 tags:
-  - Encoder-Decoder Model
-  - Sequencial Data
-series: "Encoder-Decoder Model"
+  - Encoder-Decoder_Model
+  - Sequencial_Data
+series: "Encoder-Decoder_Model"
 ---
 
 ## Seq2Seq

@@ -4,8 +4,8 @@ description: "Let's learn about Transformer : Attention Is All You Need."
 date: 2022-06-27
 update: 2022-08-15
 tags:
-  - Encoder-Decoder Model
-series: "Encoder-Decoder Model"
+  - Encoder-Decoder_Model
+series: "Encoder-Decoder_Model"
 ---
 
 ## Transformer : Attention Is All You Need

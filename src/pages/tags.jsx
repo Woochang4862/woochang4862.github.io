@@ -49,6 +49,7 @@ const TagsPage = ({ data }) => {
 
   useEffect(() => {
     const q = queryString.parse(query)["q"]
+    console.log("TAG", query, q)
     setSelected(q)
   }, [query])
 
@@ -73,11 +74,14 @@ const TagsPage = ({ data }) => {
           tagList={tags}
           selected={selected}
           onClick={tag => {
-            console.log(tag, selected)
+            console.log("TAG",tag, selected)
             if (tag === selected) {
-              navigate("/tags")
+              navigate("/tags/")
               alert("zz")
-            } else setSelected(tag)
+            } else {
+              console.log("TAG", tag);
+              setSelected(tag)
+            }
           }}
         />
       </TagListWrapper>

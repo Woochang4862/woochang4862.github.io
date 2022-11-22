@@ -5,8 +5,8 @@ date: 2022-06-27
 update: 2022-08-15
 tags:
   - AI
-  - Machine Learning
-  - Data Science
+  - Machine_Learning
+  - Data_Science
 series: "AI"
 ---
 

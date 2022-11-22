@@ -62,7 +62,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         context: {
           id: post.id,
           series: post.frontmatter.series,
-          parent: post.frontmatter.parent,
           previousPostId,
           nextPostId,
         },
@@ -89,8 +88,6 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const slug = createFilePath({ node, getNode })
-    console.log(slug)
-    const newSlug = `/${slug}/`
 
     createNodeField({
       node,
